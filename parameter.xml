@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="classes" >
+	<parameter name="URL" value="http://leaftaps.com/opentaps"></parameter>
+	<parameter name="userName" value="DemoSalesManager"></parameter>
+	<parameter name="password" value="crmsfa"></parameter>
+	<test name="Test">
+		<classes>
+		<class name="DuplicateLeads.DuplicateLeadsTC" />
+			<class name="DeletePages.DeleteLeadTC" />
+			<class name="Editpages.EditLeadTC" />
+			<class name="pages.CreateLeadTC" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
